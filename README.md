@@ -50,6 +50,14 @@ If you would like to contribute, simply begin by implementing one from the list 
 
 - [Python3.8+](https://www.python.org/downloads/)
 - [PostgreSQL database](https://www.postgresql.org/download/)
+- sudo docker network create my_network
+- sudo docker run --name postgres_container -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres:latest
+- sudo docker run --name adminer -d -p 8080:8080 adminer
+- System: PostgreSQL
+Server: postgres_container (if using Docker networking) or localhost (if using host networking)
+Username: postgres
+Password: postgres
+Database: (leave blank to see the list of databases)
 - [Redis](https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/)
 
 # Installation
